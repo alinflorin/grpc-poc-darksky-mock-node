@@ -1,0 +1,20 @@
+{
+  "name": "darksky",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start-debug": "nodemon --inspect ./src/index.ts",
+    "start": "nodemon ./src/index.ts"
+  },
+  "author": "Alin Florin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "~12.12.11",
+    "nodemon": "~2.0.4",
+    "ts-node": "~8.10.2",
+    "typescript": "~3.9.6"
+  },
+  "dependencies": {}
+}

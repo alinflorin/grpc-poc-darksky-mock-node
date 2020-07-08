@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-poc-darksky-mock-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-poc-darksky-mock-node
+  template:
+    metadata:
+      labels:
+        app: grpc-poc-darksky-mock-node
+    spec:
+      terminationGracePeriodSeconds: 0
+      containers:
+        - name: grpc-poc-darksky-mock-node
+          image: alinflorin/grpc-poc-darksky-mock-node:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-poc-darksky-mock-node
+spec:
+  selector:
+    app: grpc-poc-darksky-mock-node
+  ports:
+    - port: 3000
+      targetPort: 3000
+      name: http

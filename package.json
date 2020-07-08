@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start-debug": "nodemon --inspect ./src/index.ts",
-    "start": "nodemon ./src/index.ts"
+    "start": "nodemon ./src/index.ts",
+    "install-and-start": "npm i && npm start"
   },
   "author": "Alin Florin",
   "license": "MIT",

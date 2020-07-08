@@ -1,0 +1,12 @@
+name: grpc-poc-darksky-mock-node
+image: okteto/node:12
+workdir: /src
+command: ["npm", "run", "install-and-start"]
+remote: 50003
+persistentVolume:
+  enabled: true
+  size: 512Mi
+volumes:
+  - /root/.npm
+  - /root/.dotnet
+  - /root/.nuget

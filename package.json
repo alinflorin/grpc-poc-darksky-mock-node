@@ -17,5 +17,7 @@
     "ts-node": "~8.10.2",
     "typescript": "~3.9.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "grpc": "^1.24.3"
+  }
 }

@@ -1,12 +1,8 @@
 {
   "watch": [
-    "config.json",
-    "config.dev.json",
-    "config.stg.json",
-    "config.prod.json",
     "src/**/*.ts"
   ],
-  "ext": "ts, json",
+  "ext": "ts",
   "env": {
     "NODE_ENV": "dev"
   },

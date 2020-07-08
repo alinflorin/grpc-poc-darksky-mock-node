@@ -31,7 +31,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: grpc-poc-darksky-mock-node
-  app: grpc-poc-darksky-mock-node
+  labels:
+    app: grpc-poc-darksky-mock-node
 spec:
   selector:
     app: grpc-poc-darksky-mock-node

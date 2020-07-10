@@ -12,7 +12,7 @@ server.addService(services.DarkSkyService, {
     console.log(`Called getTemp() with request`, call.request);
     const request = call.request;
     const reply = new messages.GetTempReply();
-    reply.setCurrenttemp(randomInteger(0, 100));
+    reply.setCurrenttemp(randomInteger(0, 40));
     callback(null, reply);
   },
   getWind: (call, callback) => {
